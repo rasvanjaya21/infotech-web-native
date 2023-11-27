@@ -55,6 +55,7 @@ button:hover {
 	background-color: var(--header-color);
 	position: sticky;
 	top: 0;
+	z-index: 10;
 }
 
 .header-menu {
@@ -138,6 +139,12 @@ button:hover {
 	gap: 60px;
 }
 
+.showcase {
+	display: flex;
+	justify-content: left;
+	gap: 30px;
+}
+
 /* additional as component like tailwind */
 .text-clamp-1 {
 	overflow: hidden;
@@ -197,8 +204,17 @@ button:hover {
 	}
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 525px) {
 	.event-card-container {
 		flex-direction: column;
+	}
+
+	.showcase {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.showcase .showcase-banner {
+		width: 100%;
 	}
 }
