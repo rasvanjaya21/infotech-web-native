@@ -1,5 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
+:root {
+	--text-color: #888888;
+	--header-color: rgba(255, 255, 255, 0.9);
+	--header-active: #35aa47;
+}
+
 body {
 	font-family: "Inter", sans-serif;
+	margin: 0;
+	color: var(--text-color);
+}
+
+.container {
+	margin: auto;
+}
+
+.header {
+	border-style: solid;
+	border-width: 0 0 1px;
+	border-color: #e7e7e7;
+	padding: 30px 242px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-wrapper {
+	background-color: var(--header-color);
+	position: sticky;
+	top: 0;
+}
+
+.header-menu {
+	display: flex;
+	gap: 30px;
+}
+
+.header-menu a:first-child {
+	color: black;
+	text-decoration: none;
+}
+
+.header-menu a {
+	color: var(--text-color);
+	font-size: 14px;
+	text-decoration: none;
 }
