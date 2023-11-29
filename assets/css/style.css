@@ -222,6 +222,54 @@ button:hover {
 	gap: 30px;
 }
 
+.bidang-minat {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	text-align: center;
+	font-size: 13px;
+	text-transform: uppercase;
+	background-image: url("/assets/img/bidang-minat-background.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bidang-minat h2 {
+	color: white;
+}
+
+.bidang-minat-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.bidang-minat-container svg {
+	fill: white;
+	border: white;
+	border-style: solid;
+	padding: 10px;
+	border-radius: 100%;
+	border-width: 1px;
+}
+
+.bidang-minat-card {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.bidang-minat-card h4 {
+	margin-top: 0;
+	color: black;
+	font-weight: 400;
+}
+
+.bidang-minat-card img {
+	min-height: 50px;
+}
+
 /* additional as component like tailwind */
 .text-clamp-1 {
 	overflow: hidden;
@@ -309,5 +357,9 @@ button:hover {
 
 	#about-second-icon {
 		left: 25px;
+	}
+
+	.bidang-minat-container {
+		flex-direction: column;
 	}
 }
