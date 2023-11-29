@@ -36,6 +36,31 @@ section h2 {
 
 footer {
 	padding: 20px 250px;
+	background-color: #333333;
+	border-top: 1px solid #444444;
+	color: white;
+	font-size: 11px;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .footer-link {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
+footer .footer-link a {
+	color: white;
+	text-decoration: none;
+}
+
+footer .footer-link div {
+	border-left: 1px solid #505050;
+}
+
+footer .footer-link UMM {
+	display: none;
 }
 
 button {
@@ -271,7 +296,9 @@ button:hover {
 }
 
 .youtube {
-	position: relative; width: 100%; padding-top: 56.25%;
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
 }
 
 .youtube-card {
@@ -282,6 +309,20 @@ button:hover {
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+.footer-header {
+	display: flex;
+	flex-direction: row;
+	/* justify-content: space-between; */
+	gap: 30px;
+	background-color: #363839;
+	border-bottom: 0;
+	font-size: 11px;
+}
+
+.footer-header h3 {
+	color: white;
 }
 
 /* additional as component like tailwind */
@@ -340,6 +381,15 @@ button:hover {
 
 	.hero-card {
 		width: 100%;
+	}
+
+	.footer-header {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.footer-header img {
+		width: 20%;
 	}
 }
 
